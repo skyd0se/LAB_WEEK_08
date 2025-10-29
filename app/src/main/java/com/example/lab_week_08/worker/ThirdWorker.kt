@@ -5,7 +5,7 @@ import androidx.work.Data
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 
-class SecondWorker(
+class ThirdWorker(
     context: Context, workerParams: WorkerParameters
 ) : Worker(context, workerParams) {
     //This function executes the predefined process based on the input
@@ -14,7 +14,7 @@ class SecondWorker(
         //Get the parameter input
         val id = inputData.getString(INPUT_DATA_ID)
 
-        //Sleep the process for 6 seconds
+        //Sleep the process for 19 seconds
         Thread.sleep(3000L)
 
         //Build the output based on process result
